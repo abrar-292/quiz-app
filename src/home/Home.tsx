@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import styles from "./home.module.scss";
 import questionsData from "../../questions.json";
 import Modal from "../components/Modal/Modal";
@@ -14,7 +14,33 @@ export default function Home({ onStart }: Props) {
   const [selected, setSelected] = useState("");
   const [showRules, setShowRules] = useState(false);
 
-  const canStart = name.trim() !== "" && selected !== "";
+  const canStart = useMemo(
+    () => name.trim() !== "" && selected !== "",
+    [name, selected]
+  );
+
+  const handleNameChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setName(e.target.value);
+    },
+    []
+  );
+
+  const handleCategorySelect = useCallback((category: string) => {
+    setSelected(category);
+  }, []);
+
+  const handleShowRules = useCallback(() => {
+    setShowRules(true);
+  }, []);
+
+  const handleCloseRules = useCallback(() => {
+    setShowRules(false);
+  }, []);
+
+  const handleStart = useCallback(() => {
+    onStart(name, selected);
+  }, [onStart, name, selected]);
 
   return (
     <div className={`container text-center`}>
@@ -31,10 +57,7 @@ export default function Home({ onStart }: Props) {
             Please read all the rules before starting your quiz.
           </p>
 
-          <button
-            className={styles.rulesBtn}
-            onClick={() => setShowRules(true)}
-          >
+          <button className={styles.rulesBtn} onClick={handleShowRules}>
             Quiz Rules
           </button>
         </div>
@@ -43,7 +66,7 @@ export default function Home({ onStart }: Props) {
           <label>Full Name</label>
           <input
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleNameChange}
             placeholder="Enter your full name"
           />
 
@@ -61,7 +84,7 @@ export default function Home({ onStart }: Props) {
                   name="category"
                   value={cat}
                   checked={selected === cat}
-                  onChange={() => setSelected(cat)}
+                  onChange={() => handleCategorySelect(cat)}
                 />
                 <span className={styles.radioLabel}>{cat}</span>
               </label>
@@ -71,14 +94,14 @@ export default function Home({ onStart }: Props) {
           <button
             className={`${styles.startBtn} button`}
             disabled={!canStart}
-            onClick={() => onStart(name, selected)}
+            onClick={handleStart}
           >
             Start Quiz
           </button>
         </div>
       </div>
 
-      <Modal show={showRules} onClose={() => setShowRules(false)} />
+      <Modal show={showRules} onClose={handleCloseRules} />
     </div>
   );
 }

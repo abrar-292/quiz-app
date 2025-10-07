@@ -51,6 +51,7 @@ p {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 
   @media (max-width: 1680px) {
     max-width: 1024px;
@@ -97,4 +98,8 @@ label {
 
 .w-100 {
   width: 100%;
+}
+
+.gap-1 {
+  gap: 0.5rem;
 }

@@ -8,10 +8,10 @@
           "id": "js_q1",
           "question": "What is the correct syntax for referring to an external script called 'script.js'?",
           "options": [
-            "A. <script name='script.js'>",
-            "B. <script href='script.js'>",
-            "C. <script src='script.js'>",
-            "D. <script file='script.js'>"
+            "<script name='script.js'>",
+            "<script href='script.js'>",
+            "<script src='script.js'>",
+            "<script file='script.js'>"
           ],
           "correctAnswer": "C",
           "timeLimit": 10
@@ -20,10 +20,10 @@
           "id": "js_q2",
           "question": "Which company initially developed JavaScript?",
           "options": [
-            "A. Microsoft",
-            "B. Netscape",
-            "C. Sun Microsystems",
-            "D. Google"
+            "Microsoft",
+            "Netscape",
+            "Sun Microsystems",
+            "Google"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -32,10 +32,10 @@
           "id": "js_q3",
           "question": "Which method converts a JSON string to a JavaScript object?",
           "options": [
-            "A. JSON.parse()",
-            "B. JSON.stringify()",
-            "C. Object.parse()",
-            "D. toObject()"
+            "JSON.parse()",
+            "JSON.stringify()",
+            "Object.parse()",
+            "toObject()"
           ],
           "correctAnswer": "A",
           "timeLimit": 10
@@ -44,10 +44,10 @@
           "id": "js_q4",
           "question": "Which method rounds a number to the nearest integer in JavaScript?",
           "options": [
-            "A. Math.ceil()",
-            "B. Math.floor()",
-            "C. Math.round()",
-            "D. Math.trunc()"
+            "Math.ceil()",
+            "Math.floor()",
+            "Math.round()",
+            "Math.trunc()"
           ],
           "correctAnswer": "C",
           "timeLimit": 10
@@ -56,10 +56,10 @@
           "id": "js_q5",
           "question": "What will `typeof null` return?",
           "options": [
-            "A. 'null'",
-            "B. 'undefined'",
-            "C. 'object'",
-            "D. 'boolean'"
+            "'null'",
+            "'undefined'",
+            "'object'",
+            "'boolean'"
           ],
           "correctAnswer": "C",
           "timeLimit": 10
@@ -68,10 +68,10 @@
           "id": "js_q6",
           "question": "How do you create a constant in JavaScript?",
           "options": [
-            "A. var x",
-            "B. let x",
-            "C. const x",
-            "D. constant x"
+            "var x",
+            "let x",
+            "const x",
+            "constant x"
           ],
           "correctAnswer": "C",
           "timeLimit": 10
@@ -80,10 +80,10 @@
           "id": "js_q7",
           "question": "Which array method creates a new array with elements that pass a test?",
           "options": [
-            "A. forEach()",
-            "B. filter()",
-            "C. map()",
-            "D. reduce()"
+            "forEach()",
+            "filter()",
+            "map()",
+            "reduce()"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -92,10 +92,10 @@
           "id": "js_q8",
           "question": "How do you write an arrow function that returns 42?",
           "options": [
-            "A. () => 42",
-            "B. -> 42",
-            "C. function() { return 42 }",
-            "D. (=>) 42"
+            "() => 42",
+            "-> 42",
+            "function() { return 42 }",
+            "(=>) 42"
           ],
           "correctAnswer": "A",
           "timeLimit": 10
@@ -104,10 +104,10 @@
           "id": "js_q9",
           "question": "Which statement is true about `let` vs `var`?",
           "options": [
-            "A. `let` is function-scoped, `var` is block-scoped",
-            "B. Both are function-scoped",
-            "C. `let` is block-scoped, `var` is function-scoped",
-            "D. Both are block-scoped"
+            "`let` is function-scoped, `var` is block-scoped",
+            "Both are function-scoped",
+            "`let` is block-scoped, `var` is function-scoped",
+            "Both are block-scoped"
           ],
           "correctAnswer": "C",
           "timeLimit": 10
@@ -116,10 +116,10 @@
           "id": "js_q10",
           "question": "Which symbol is used for strict equality comparison?",
           "options": [
-            "A. ==",
-            "B. ===",
-            "C. =",
-            "D. !="
+            "==",
+            "===",
+            "=",
+            "!="
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -134,10 +134,10 @@
           "id": "ng_q1",
           "question": "Which command generates a new Angular component?",
           "options": [
-            "A. ng new component",
-            "B. ng g c component-name",
-            "C. ng create component",
-            "D. ng make component"
+            "ng new component",
+            "ng g c component-name",
+            "ng create component",
+            "ng make component"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -146,10 +146,10 @@
           "id": "ng_q2",
           "question": "What is the purpose of `@Component` decorator?",
           "options": [
-            "A. To define a service",
-            "B. To define metadata for a component",
-            "C. To bootstrap the app",
-            "D. To create a module"
+            "To define a service",
+            "To define metadata for a component",
+            "To bootstrap the app",
+            "To create a module"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -158,10 +158,10 @@
           "id": "ng_q3",
           "question": "Which file typically declares Angular modules?",
           "options": [
-            "A. app.routes.ts",
-            "B. app.module.ts",
-            "C. main.ts",
-            "D. index.html"
+            "app.routes.ts",
+            "app.module.ts",
+            "main.ts",
+            "index.html"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -170,10 +170,10 @@
           "id": "ng_q4",
           "question": "Which directive is used for conditional rendering?",
           "options": [
-            "A. *ngFor",
-            "B. *ngIf",
-            "C. [ngClass]",
-            "D. [ngStyle]"
+            "*ngFor",
+            "*ngIf",
+            "[ngClass]",
+            "[ngStyle]"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -182,10 +182,10 @@
           "id": "ng_q5",
           "question": "What is dependency injection in Angular primarily used for?",
           "options": [
-            "A. Styling components",
-            "B. Managing services and their instances",
-            "C. Optimizing templates",
-            "D. Handling forms"
+            "Styling components",
+            "Managing services and their instances",
+            "Optimizing templates",
+            "Handling forms"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -194,10 +194,10 @@
           "id": "ng_q6",
           "question": "Which module is required for template-driven forms?",
           "options": [
-            "A. ReactiveFormsModule",
-            "B. FormsModule",
-            "C. HttpClientModule",
-            "D. RouterModule"
+            "ReactiveFormsModule",
+            "FormsModule",
+            "HttpClientModule",
+            "RouterModule"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -206,10 +206,10 @@
           "id": "ng_q7",
           "question": "Which service is used to make HTTP calls in Angular?",
           "options": [
-            "A. HttpModule",
-            "B. HttpClient",
-            "C. AxiosService",
-            "D. FetchService"
+            "HttpModule",
+            "HttpClient",
+            "AxiosService",
+            "FetchService"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -218,10 +218,10 @@
           "id": "ng_q8",
           "question": "What does `*ngFor=\"let item of items\"` do?",
           "options": [
-            "A. Conditionally shows `items`",
-            "B. Iterates over `items` and renders for each",
-            "C. Applies a class to `items`",
-            "D. Binds a style to `items`"
+            "Conditionally shows `items`",
+            "Iterates over `items` and renders for each",
+            "Applies a class to `items`",
+            "Binds a style to `items`"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -230,10 +230,10 @@
           "id": "ng_q9",
           "question": "Router outlet is used to:",
           "options": [
-            "A. Display routed components",
-            "B. Register routes",
-            "C. Fetch API data",
-            "D. Manage state"
+            "Display routed components",
+            "Register routes",
+            "Fetch API data",
+            "Manage state"
           ],
           "correctAnswer": "A",
           "timeLimit": 10
@@ -242,10 +242,10 @@
           "id": "ng_q10",
           "question": "What does the `async` pipe do?",
           "options": [
-            "A. Converts an Observable to a Promise",
-            "B. Subscribes to an Observable/Promise and returns latest value",
-            "C. Makes functions asynchronous",
-            "D. Delays rendering"
+            "Converts an Observable to a Promise",
+            "Subscribes to an Observable/Promise and returns latest value",
+            "Makes functions asynchronous",
+            "Delays rendering"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -260,10 +260,10 @@
           "id": "rx_q1",
           "question": "What is the main goal of React's Concurrent Rendering features?",
           "options": [
-            "A. Server-side rendering only",
-            "B. Allow interruptible rendering for better responsiveness",
-            "C. Improve bundle size",
-            "D. Replace hooks"
+            "Server-side rendering only",
+            "Allow interruptible rendering for better responsiveness",
+            "Improve bundle size",
+            "Replace hooks"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -272,10 +272,10 @@
           "id": "rx_q2",
           "question": "Which hook should you prefer for memoizing expensive calculations?",
           "options": [
-            "A. useEffect",
-            "B. useMemo",
-            "C. useCallback",
-            "D. useLayoutEffect"
+            "useEffect",
+            "useMemo",
+            "useCallback",
+            "useLayoutEffect"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -284,10 +284,10 @@
           "id": "rx_q3",
           "question": "What problem does `useTransition` address?",
           "options": [
-            "A. Managing global state",
-            "B. Deferring non-urgent UI updates",
-            "C. Fetching data",
-            "D. Memoization"
+            "Managing global state",
+            "Deferring non-urgent UI updates",
+            "Fetching data",
+            "Memoization"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -296,10 +296,10 @@
           "id": "rx_q4",
           "question": "Which statement about keys in a list is correct?",
           "options": [
-            "A. Index is always fine",
-            "B. Keys must be unique among siblings and stable",
-            "C. Keys can change between renders",
-            "D. Keys are optional"
+            "Index is always fine",
+            "Keys must be unique among siblings and stable",
+            "Keys can change between renders",
+            "Keys are optional"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -308,10 +308,10 @@
           "id": "rx_q5",
           "question": "What does `useLayoutEffect` do compared to `useEffect`?",
           "options": [
-            "A. Runs later than paint",
-            "B. Runs synchronously after DOM mutations, before paint",
-            "C. Only runs on server",
-            "D. Only runs once"
+            "Runs later than paint",
+            "Runs synchronously after DOM mutations, before paint",
+            "Only runs on server",
+            "Only runs once"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -320,10 +320,10 @@
           "id": "rx_q6",
           "question": "In React, what is the recommended way to avoid prop-drilling for deep components?",
           "options": [
-            "A. Global variables",
-            "B. Context API",
-            "C. Window object",
-            "D. Inline styles"
+            "Global variables",
+            "Context API",
+            "Window object",
+            "Inline styles"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -332,10 +332,10 @@
           "id": "rx_q7",
           "question": "Which approach reduces re-renders when passing callbacks to children?",
           "options": [
-            "A. Inline arrow functions always",
-            "B. Wrap in useCallback with stable deps",
-            "C. Wrap in useMemo",
-            "D. Use global function"
+            "Inline arrow functions always",
+            "Wrap in useCallback with stable deps",
+            "Wrap in useMemo",
+            "Use global function"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -344,10 +344,10 @@
           "id": "rx_q8",
           "question": "What is Suspense primarily used for?",
           "options": [
-            "A. CSS animations",
-            "B. Coordinating asynchronous loading states",
-            "C. Error logging",
-            "D. Testing"
+            "CSS animations",
+            "Coordinating asynchronous loading states",
+            "Error logging",
+            "Testing"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -356,10 +356,10 @@
           "id": "rx_q9",
           "question": "Which statement about React keys across different arrays is correct?",
           "options": [
-            "A. Keys must be globally unique",
-            "B. Keys must be unique within their list only",
-            "C. Keys can repeat within the same list",
-            "D. Keys are ignored by React"
+            "Keys must be globally unique",
+            "Keys must be unique within their list only",
+            "Keys can repeat within the same list",
+            "Keys are ignored by React"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -368,10 +368,10 @@
           "id": "rx_q10",
           "question": "What is the benefit of code-splitting with `React.lazy`?",
           "options": [
-            "A. Eliminates need for a bundler",
-            "B. Loads components on demand to reduce initial bundle",
-            "C. Improves server performance",
-            "D. Forces synchronous rendering"
+            "Eliminates need for a bundler",
+            "Loads components on demand to reduce initial bundle",
+            "Improves server performance",
+            "Forces synchronous rendering"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -386,10 +386,10 @@
           "id": "fl_q1",
           "question": "Flutter apps are primarily written in which language?",
           "options": [
-            "A. Java",
-            "B. Kotlin",
-            "C. Dart",
-            "D. Swift"
+            "Java",
+            "Kotlin",
+            "Dart",
+            "Swift"
           ],
           "correctAnswer": "C",
           "timeLimit": 10
@@ -398,10 +398,10 @@
           "id": "fl_q2",
           "question": "Which widget is immutable and does not maintain state?",
           "options": [
-            "A. StatefulWidget",
-            "B. StatelessWidget",
-            "C. InheritedWidget",
-            "D. StreamBuilder"
+            "StatefulWidget",
+            "StatelessWidget",
+            "InheritedWidget",
+            "StreamBuilder"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -410,10 +410,10 @@
           "id": "fl_q3",
           "question": "What is the purpose of `setState()` in Flutter?",
           "options": [
-            "A. Navigate to a new screen",
-            "B. Rebuild a widget with updated state",
-            "C. Create a new widget tree",
-            "D. Fetch data from network"
+            "Navigate to a new screen",
+            "Rebuild a widget with updated state",
+            "Create a new widget tree",
+            "Fetch data from network"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -422,10 +422,10 @@
           "id": "fl_q4",
           "question": "Which layout widget arranges children vertically?",
           "options": [
-            "A. Row",
-            "B. Column",
-            "C. Stack",
-            "D. GridView"
+            "Row",
+            "Column",
+            "Stack",
+            "GridView"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -434,10 +434,10 @@
           "id": "fl_q5",
           "question": "What is `pubspec.yaml` used for?",
           "options": [
-            "A. Declaring dependencies and assets",
-            "B. Writing application code",
-            "C. Configuring device permissions",
-            "D. Defining platform channels"
+            "Declaring dependencies and assets",
+            "Writing application code",
+            "Configuring device permissions",
+            "Defining platform channels"
           ],
           "correctAnswer": "A",
           "timeLimit": 10
@@ -446,10 +446,10 @@
           "id": "fl_q6",
           "question": "Which command starts a new Flutter project?",
           "options": [
-            "A. flutter create <name>",
-            "B. flutter init <name>",
-            "C. dart new <name>",
-            "D. flutter start <name>"
+            "flutter create <name>",
+            "flutter init <name>",
+            "dart new <name>",
+            "flutter start <name>"
           ],
           "correctAnswer": "A",
           "timeLimit": 10
@@ -458,10 +458,10 @@
           "id": "fl_q7",
           "question": "How do you add padding around a widget?",
           "options": [
-            "A. Wrap with Container only",
-            "B. Wrap with Padding widget",
-            "C. Use SizedBox only",
-            "D. Use Align"
+            "Wrap with Container only",
+            "Wrap with Padding widget",
+            "Use SizedBox only",
+            "Use Align"
           ],
           "correctAnswer": "B",
           "timeLimit": 10
@@ -470,10 +470,10 @@
           "id": "fl_q8",
           "question": "Which widget provides scrollable content?",
           "options": [
-            "A. ListView",
-            "B. Center",
-            "C. SizedBox",
-            "D. Align"
+            "ListView",
+            "Center",
+            "SizedBox",
+            "Align"
           ],
           "correctAnswer": "A",
           "timeLimit": 10
@@ -482,10 +482,10 @@
           "id": "fl_q9",
           "question": "What does `hot reload` do in Flutter?",
           "options": [
-            "A. Rebuilds UI without losing state where possible",
-            "B. Restarts the app",
-            "C. Clears cache",
-            "D. Only recompiles native code"
+            "Rebuilds UI without losing state where possible",
+            "Restarts the app",
+            "Clears cache",
+            "Only recompiles native code"
           ],
           "correctAnswer": "A",
           "timeLimit": 10
@@ -494,10 +494,10 @@
           "id": "fl_q10",
           "question": "Which widget overlays children on top of each other?",
           "options": [
-            "A. Stack",
-            "B. Row",
-            "C. Column",
-            "D. Wrap"
+            "Stack",
+            "Row",
+            "Column",
+            "Wrap"
           ],
           "correctAnswer": "A",
           "timeLimit": 10

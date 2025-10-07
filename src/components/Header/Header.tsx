@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 
 type Props = {
   phase: "home" | "quiz" | "result";
-  username?: string;
+  username: string;
   onExit?: () => void;
 };
 
@@ -22,9 +22,12 @@ export default function Header({ phase, username, onExit }: Props) {
             </button>
           )}
 
-          {phase === "result" && username && (
-            <div className={styles.avatar} title={username}>
-              {username.charAt(0).toUpperCase()}
+          {phase === "result" && (
+            <div className="d-flex align-center gap-1">
+              <div className={styles.avatar} title={username}>
+                {username.charAt(0).toUpperCase()}
+              </div>
+              {username}
             </div>
           )}
         </div>

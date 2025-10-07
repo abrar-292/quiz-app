@@ -1,37 +1,64 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Home from "./home/Home";
+import Quiz from "./components/Quiz/Quiz";
+import Result from "./components/Result/Result";
 import Header from "./components/Header/Header";
+import questionsData from "../questions.json";
+import type { Category as QuizCategory } from "./components/Quiz/Quiz";
+
+type Category = (typeof questionsData.categories)[number];
+
+const categories = questionsData.categories as Category[];
 
 export default function App() {
   const [phase, setPhase] = useState<"home" | "quiz" | "result">("home");
   const [username, setUsername] = useState("");
+  const [category, setCategory] = useState<Category | null>(null);
+  const [summary, setSummary] = useState<{
+    correct: number;
+    incorrect: number;
+    unanswered: number;
+    total: number;
+    percentage: number;
+  } | null>(null);
 
-  const handleStart = (name: string, category: string) => {
+  const handleStart = useCallback((name: string, categoryName: string) => {
     setUsername(name);
+    const sel = categories.find((c) => c.name === categoryName) || null;
+    setCategory(sel);
     setPhase("quiz");
-  };
+  }, []);
 
-  const handleExit = () => {
+  const handleExit = useCallback(() => {
     setPhase("home");
     setUsername("");
-  };
+    setCategory(null);
+    setSummary(null);
+  }, []);
+
+  const handleFinish = useCallback((s: typeof summary) => {
+    setSummary(s);
+    setPhase("result");
+  }, []);
+
+  const handleRetake = useCallback(() => {
+    setPhase("home");
+    setSummary(null);
+    setCategory(null);
+  }, []);
 
   return (
     <>
       <Header phase={phase} username={username} onExit={handleExit} />
-      <div style={{ padding: "1rem" }}>
+      <div className="container">
         {phase === "home" && <Home onStart={handleStart} />}
 
-        {phase === "quiz" && (
-          <div style={{ textAlign: "center", marginTop: "3rem" }}>
-            <h2>Quiz in progress...</h2>
-          </div>
+        {phase === "quiz" && category && (
+          <Quiz category={category as QuizCategory} onFinish={handleFinish} />
         )}
 
-        {phase === "result" && (
-          <div style={{ textAlign: "center", marginTop: "3rem" }}>
-            <h2>Result Screen</h2>
-          </div>
+        {phase === "result" && summary && (
+          <Result summary={summary} onRetake={handleRetake} />
         )}
       </div>
     </>

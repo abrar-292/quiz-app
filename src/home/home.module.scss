@@ -42,13 +42,8 @@
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    background-color: transparent;
   }
-}
-
-.categories {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
 }
 
 .startBtn {

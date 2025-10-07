@@ -1,0 +1,82 @@
+@use "../../styles/tokens";
+
+.wrap {
+  max-width: 960px;
+  margin: 24px auto;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  padding: 32px;
+  text-align: center;
+}
+
+.title {
+  letter-spacing: 6px;
+  font-weight: 100;
+  color: var(--mutedText);
+  margin-top: 1rem;
+  font-size: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.subtitle {
+  color: var(--mutedText);
+}
+
+.icon {
+  font-size: 40px;
+  margin: 0 auto 0 auto;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: rgba(6, 175, 82, 0.1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreCircle {
+  margin: 2rem auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  strong {
+    font-size: 32px;
+  }
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+/* theme by tone */
+.success {
+  color: #06af52;
+}
+.failure {
+  color: rgba(175, 6, 6, 1);
+}
+.neutral {
+  color: #af9b06;
+}
+
+.reTake {
+  margin: 1rem auto;
+}
